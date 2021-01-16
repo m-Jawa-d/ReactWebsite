@@ -19,15 +19,20 @@ const Contact = () => {
     })
   }
 
+
   const sent = (obj) => {
     obj.preventDefault();
-    alert(`Your Name is ${val.Name}. Your Mobile NO is ${val.Phone} and your Email is ${val.Email} 
-    Keep Smiling 🙂 and be Motivated 👊 .`)
+    upVal({
+      Name: '',
+      Phone: '',
+      Email: '',
+    })
+    alert(`Your Name is" ${val.Name}". Your Email is "${val.Email}".`);
   }
   return (
     <>
       <div>
-        <h1 className=' text-center mt-5 my-3'>Contact me</h1>
+        <h1 className=' text-center mt-5 my-3'>Contact Me</h1>
       </div>
       <div className='container'>
         <div className="row">
@@ -39,7 +44,7 @@ const Contact = () => {
                 <label for="exampleFormControlInput1" class="form-label">PHONE</label>
                 <input onChange={thisVal} value={val.Phone} name='Phone' type="password" class="form-control" placeholder="Enter your Mobile No" />
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input onChange={thisVal} value={val.Email} name='Email' type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                <input required onChange={thisVal} value={val.Email} name='Email' type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Message</label>

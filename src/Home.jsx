@@ -10,7 +10,7 @@ const Home = () => {
         img={Pic}
         lik="/service"
       />
-      <div className='fixed-bottom'>
+      <div className='posit text-center'>
         <Footer />
       </div>
     </>

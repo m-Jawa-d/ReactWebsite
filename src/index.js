@@ -4,7 +4,7 @@ import App from "./App";
 import "../node_modules/popper.js/dist/popper";
 import { BrowserRouter } from "react-router-dom";
 
-ReactDom.render(
+ReactDom.render( 
     <BrowserRouter>
         <App />
     </BrowserRouter>,

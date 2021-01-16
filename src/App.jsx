@@ -7,6 +7,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import MyProjects from "./MyProjects";
 import './index.css';
 import { Redirect, Route, Switch } from "react-router-dom";
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route exact path="/Service" component={Service} />
         <Route exact path="/About" component={About} />
         <Route exact path="/Contact" component={Contact} />
+        <Route exact path="/Project" component={MyProjects} />
         <Redirect to="/home" />
       </Switch>
     </>

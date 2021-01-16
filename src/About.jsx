@@ -12,7 +12,7 @@ const About = () => {
           lik="/contact"
         />
       </div>
-      <div className='fixed-bottom'>
+      <div className='posit text-center'>
         <Footer />
       </div>
     </>

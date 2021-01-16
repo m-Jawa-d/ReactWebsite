@@ -77,6 +77,16 @@
 .salo{
   padding-top: 110px;
 }
+.posit{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+
+
+}
+.hih{
+  height: 630px;
+}
 
 /*************************** SERVICE Section Ends*******************************/
 @media (max-width:721px){
@@ -94,8 +104,16 @@
   .cen{
    text-align: center;
   }
+  .posit{
+    position: relative!important;
+  }
 
 
+}
+@media (max-width:821px){
+  .hih{
+    height: 200px!important;
+  }
 }
 
 

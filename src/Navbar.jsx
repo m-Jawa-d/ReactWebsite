@@ -28,6 +28,9 @@ const Navbar = () => {
                                         <li className="nav-item">
                                             <NavLink exact activeClassName="activ" className="nav-link" to="contact">Contact</NavLink>
                                         </li>
+                                        <li className="nav-item">
+                                            <NavLink exact activeClassName="activ" className="nav-link" to="Project">Projects</NavLink>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
