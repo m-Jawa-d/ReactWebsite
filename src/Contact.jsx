@@ -22,12 +22,17 @@ const Contact = () => {
 
   const sent = (obj) => {
     obj.preventDefault();
+<<<<<<< HEAD
     upVal({
       Name: '',
       Phone: '',
       Email: '',
     })
     alert(`Your Name is" ${val.Name}". Your Email is "${val.Email}".`);
+=======
+    alert(`Your Name is ${val.Name}.Your Email is ${val.Email} 
+    .Keep Smiling 🙂 and be Motivated 👊 .`)
+>>>>>>> cef435c7833bb78ce12f4d55dd1789a2a750ad73
   }
   return (
     <>
@@ -43,8 +48,13 @@ const Contact = () => {
                 <input onChange={thisVal} value={val.Name} name='Name' required type="text" class="form-control" placeholder="Enter Your Full Name" />
                 <label for="exampleFormControlInput1" class="form-label">PHONE</label>
                 <input onChange={thisVal} value={val.Phone} name='Phone' type="password" class="form-control" placeholder="Enter your Mobile No" />
+<<<<<<< HEAD
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
                 <input required onChange={thisVal} value={val.Email} name='Email' type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+=======
+                <label required for="exampleFormControlInput1" class="form-label">Email</label>
+                <input onChange={thisVal} value={val.Email} name='Email' type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+>>>>>>> cef435c7833bb78ce12f4d55dd1789a2a750ad73
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Message</label>
